@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task1.2P</title>
+</head>
+
+<body>
+
+    <h1>JavaScript Strings</h1>
+
+
+    <p>The length of the string is:</p>
+    <p id="demo"></p>
+    <p> The string aditya in Upper Case is -</p>
+    <p id="name"></p>
+    <p>The string BHAVINI in Lower Case is - </p>
+    <p id="NAME"></p>
+    <p>Lets display the character at - </p>
+    <p id="at"></p>
+    <p>Lets display the sliced part of the string, it is - </p>
+    <p id="itis"></p>
+    <p> The toString() method- </p>
+    <p id="tostring"></p>
+    <p>The toExponential() method - </p>
+    <p id="toexponential"></p>
+    <p>The toFixed() method - </p>
+    <p id="tofixed"></p>
+    <p>The toPrecision() method - </p>
+    <p id="toprecision"></p>
+    <p>The valueOf() method - </p>
+    <p id="valueof"></p>
+    <p>The length of any array is returned by the length property. an example is - - </p>
+    <p id="length"></p>
+    <p>To get the array as a retuern separated with commas, we use the toString() method. an example is - - </p>
+    <p id="toString"></p>
+    <p>We will now find elements through their indexes </p>
+    <p id="index"></p>
+    <p>We will now learn using the upshift() method </p>
+    <p id="up"></p>
+    <p id="shift"></p>
+    <p>We will now learn using the shift() method </p>
+    <p id="shiftt"></p>
+    <p id="shiftttt"></p>
+
+
+
+    <script>
+        let text = "deakinuniversitygeelongwaterfrontwaurnpondscampus";
+        document.getElementById("demo").innerHTML = text.length;
+
+        let word = "aditya";
+        document.getElementById("name").innerHTML = word.toUpperCase();
+
+        let wordd = "BHAVINI";
+        document.getElementById("NAME").innerHTML = wordd.toLowerCase();
+
+        let char = "BHAVINI";
+        document.getElementById("at").innerHTML = char.charAt(4);
+
+        let character = "Cap, Hat, Binoculars";
+        let part = character.slice(0, 3);
+        document.getElementById("itis").innerHTML = part;
+
+
+
+        // number methods
+        let m = 617;
+        document.getElementById("tostring").innerHTML =
+            m.toString() + "<br>" +
+            (617).toString() + "<br>" +
+            (600 + 17).toString();
+
+        let n = 4.361;
+        document.getElementById("toexponential").innerHTML =
+            n.toExponential() + "<br>" +
+            n.toExponential(2) + "<br>" +
+            n.toExponential(4) + "<br>" +
+            n.toExponential(6);
+
+        let o = 4.361;
+        document.getElementById("tofixed").innerHTML =
+            o.toFixed(0) + "<br>" +
+            o.toFixed(2) + "<br>" +
+            o.toFixed(4) + "<br>" +
+            o.toFixed(6);
+
+        let p = 4.361;
+        document.getElementById("toprecision").innerHTML =
+            p.toPrecision() + "<br>" +
+            p.toPrecision(2) + "<br>" +
+            p.toPrecision(4) + "<br>" +
+            p.toPrecision(6);
+
+        let q = 824;
+        document.getElementById("valueof").innerHTML =
+            q.valueOf() + "<br>" +
+            (824).valueOf() + "<br>" +
+            (800 + 24).valueOf();
+
+        // arrays
+
+        const shoes = ["Nike", "Adidas", "New Balance"]
+        let measure = shoes.length;
+        document.getElementById("length").innerHTML = measure;
+
+        const colours = ["Pink", "Blue", "Beige"]
+        document.getElementById("toString").innerHTML = colours.toString();
+
+        const friends = ["Aditya", "Bef", "Kobe"];
+
+        document.getElementById("index").innerHTML = "The tallest in all the friends is: " + friends[0];
+
+
+        const sports = ["Cricket", "Footy", "Hockey"];
+        document.getElementById("up").innerHTML = sports;
+        sports.unshift("Basketball");
+        document.getElementById("shift").innerHTML = sports;
+
+        const cartoon = ["Doraemon", "Oggy", "Ninja"];
+        document.getElementById("shiftt").innerHTML = cartoon.shift();
+        document.getElementById("shifttt").innerHTML = cartoon
+
+
+
+
+
+    </script>
+
+
+</body>
+
+</html>
